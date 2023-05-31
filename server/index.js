@@ -89,7 +89,7 @@ app.post('/api/auth', async (req,res)=>
 app.use(express.static(path.join(__dirname, './server/auth_system/build')))
 app.get('*', function(req,res)
 {
-    res.sendFile(path.join(__dirname,'./server/auth_system/build/index.js'))
+    res.sendFile(path.join(__dirname,'./server/auth_system/build/index.html'))
 })
 
 app.listen(port,()=>
